@@ -1,6 +1,6 @@
+import { Link } from "react-router";
 import styled from "styled-components";
 import { colors } from "../../styles/GlobalStyles";
-import { Link } from "react-router";
 
 export const Card = styled.div`
   display: flex;
@@ -10,18 +10,20 @@ export const Card = styled.div`
   border-radius: 5px;
 
   img{
-    width: 100%;
+    max-width: 100%;
     border-radius: 5px 5px 0 0;
   }
 `
 export const Tag = styled.span`
   padding: 8px 8px;
   border-radius: 5px;
-  background-color: ${colors.color3};
+  background-color: ${colors.color3}B2;
 `
 export const Tags = styled.div`
+  font-weight: bold;
   position: absolute;
-  right: 0;
+  right: 16px;
+  top: 16px;
   display: flex;
   gap: 15px;
 `
