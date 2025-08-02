@@ -1,9 +1,10 @@
+import AppRoutes from "./routes";
 import GlobalStyles from "./styles/GlobalStyles"
 
 const App = () => (
   <>
     <GlobalStyles />
-    <h1>Efood</h1>
+    <AppRoutes />
   </>
 );
 
