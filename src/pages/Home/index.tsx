@@ -1,1 +1,3 @@
-export const Home = () => <div> Resturantes</div>;
+import CardRestaurant from "../../components/CardRestaurant";
+
+export const Home = () => <section><CardRestaurant /></section>;
