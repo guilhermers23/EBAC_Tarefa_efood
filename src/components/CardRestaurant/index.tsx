@@ -1,5 +1,6 @@
 import { FaStar } from "react-icons/fa";
 import * as S from "./CardRestaurantStyled";
+import imgRestaurant from "../../assets/imagem.png";
 import { Button } from "../../styles/GlobalStyles";
 
 const CardRestaurant = () => {
@@ -9,7 +10,7 @@ const CardRestaurant = () => {
         <S.Tag>Destaque da Semana</S.Tag>
         <S.Tag>Japonesa</S.Tag>
       </S.Tags>
-      <img src="../src/assets/imagem.png" alt="" />
+      <img src={imgRestaurant} alt="Restaurante X" />
 
       <S.Infos>
         <S.RestaurantInfo>

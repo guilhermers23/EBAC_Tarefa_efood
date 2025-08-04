@@ -1,10 +1,11 @@
 import { Button } from "../../styles/GlobalStyles";
+import pizza from "../../assets/pizza.png";
 import * as S from "./CardFood";
 
 const CardFood = () => {
   return (
     <S.CardFood>
-      <img src="../../src/assets/pizza.png" alt="Pizza" />
+      <img src={pizza} alt="Pizza" />
       <S.FoodInfos>
         <h3>Pizza Marguerita</h3>
         <p>

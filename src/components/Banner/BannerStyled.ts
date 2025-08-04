@@ -1,8 +1,10 @@
 import styled from "styled-components";
+import bannerHome from "../../assets/banner.jpg";
+import bannerRestaurant from "../../assets/fundo.png";
 import type { PropsBanner } from ".";
 
 export const Banner = styled.section<PropsBanner>`
-  background-image: ${({ typebanner }) => typebanner === "Banner" ? "url('../src/assets/banner.jpg')" : "url('../src/assets/fundo.png')"};
+  background-image: ${({ typebanner }) => typebanner === "Banner" ? `url(${bannerHome})` : `url(${bannerRestaurant})`};
   background-size: cover;
   background-position: center;
   padding: 2rem;
