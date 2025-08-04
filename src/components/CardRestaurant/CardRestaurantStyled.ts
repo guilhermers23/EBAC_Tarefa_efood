@@ -19,6 +19,7 @@ export const Tag = styled.span`
   border-radius: 5px;
   background-color: ${colors.color3}B2;
 `
+
 export const Tags = styled.div`
   font-weight: bold;
   position: absolute;
@@ -55,20 +56,6 @@ export const RestaurantInfo = styled.div`
 export const AboutRestaurant = styled.p`
   font-size: 14px;
   line-height: 1.5rem;
-`
-
-export const Button = styled.button`
-  display: block;
-  padding: 6px 0;
-  border-radius: 5px;
-  border: none;
-  background-color: ${colors.color2};
-  color: ${colors.white};
-  font-size: 14px;
-  font-weight: bold;
-  width: 100%;
-  transition: all ease-in .2s;
-  cursor: pointer;
 `
 
 export const LinkButton = styled(Link)`

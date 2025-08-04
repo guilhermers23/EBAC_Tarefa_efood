@@ -1,5 +1,6 @@
 import { FaStar } from "react-icons/fa";
 import * as S from "./CardRestaurantStyled";
+import { Button } from "../../styles/GlobalStyles";
 
 const CardRestaurant = () => {
   return (
@@ -19,7 +20,7 @@ const CardRestaurant = () => {
         </S.AboutRestaurant>
 
         <S.LinkButton to={`/restaurante/name`}>
-          <S.Button>Acessar</S.Button>
+          <Button type="button">Acessar</Button>
         </S.LinkButton>
 
       </S.Infos>

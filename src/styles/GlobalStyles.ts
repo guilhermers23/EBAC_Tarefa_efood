@@ -37,4 +37,19 @@ body{
   color: ${colors.white} ;
 }
 `
+
+export const Button = styled.button`
+  display: block;
+  padding: 6px 0;
+  border-radius: 5px;
+  border: none;
+  background-color: ${colors.color2};
+  color: ${colors.white};
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+  transition: all ease-in .2s;
+  cursor: pointer;
+`
+
 export default GlobalStyles;
