@@ -1,10 +1,11 @@
 import styled from "styled-components"
 import { colors } from "../../styles/GlobalStyles"
+import bannerImg from "../../assets/banner.png";
 
 type PropsPage = { page: string | undefined };
 
 export const HeaderBar = styled.header`
-  background-color: ${colors.color2};
+  background-image: url(${bannerImg});
   padding: 24px;
 `
 export const HeaderContainer = styled.div<PropsPage>`
@@ -16,7 +17,7 @@ export const HeaderContainer = styled.div<PropsPage>`
   margin: 0 auto;
 
    a{
-    color: ${colors.white};
+    color: ${colors.color2};
     font-weight: bold;
   }
 `

@@ -1,5 +1,6 @@
+import { colors } from './../../styles/GlobalStyles';
 import styled from "styled-components";
-import bannerHome from "../../assets/banner.jpg";
+import bannerHome from "../../assets/banner.png";
 import bannerRestaurant from "../../assets/fundo.png";
 import type { PropsBanner } from ".";
 
@@ -9,6 +10,7 @@ export const Banner = styled.section<PropsBanner>`
   background-position: center;
   padding: 2rem;
   margin-bottom: 80px;
+  color: ${({ typebanner }) => typebanner === "Restaurante" ? `${colors.white}` : `${colors.color2}`};
 `
 
 export const FoodNation = styled.h3`

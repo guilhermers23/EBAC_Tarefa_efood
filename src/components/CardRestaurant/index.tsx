@@ -1,7 +1,7 @@
 import { FaStar } from "react-icons/fa";
-import * as S from "./CardRestaurantStyled";
 import imgRestaurant from "../../assets/imagem.png";
 import { Button } from "../../styles/GlobalStyles";
+import * as S from "./CardRestaurantStyled";
 
 const CardRestaurant = () => {
   return (
@@ -14,14 +14,14 @@ const CardRestaurant = () => {
 
       <S.Infos>
         <S.RestaurantInfo>
-          <h3>Restaurante x</h3>
+          <h3>Hioki Sushi</h3>
           <span>4.9 <FaStar size={24} /></span>
         </S.RestaurantInfo>
         <S.AboutRestaurant>Peça já o melhor da culinária japonesa no conforto da sua casa! Sushis frescos, sashimis deliciosos e pratos quentes irresistíveis. Entrega rápida, embalagens cuidadosas e qualidade garantida. Experimente o Japão sem sair do lar com nosso delivery!
         </S.AboutRestaurant>
 
         <S.LinkButton to={`/restaurante/name`}>
-          <Button type="button">Acessar</Button>
+          <Button colorbutton="red" type="button">Acessar</Button>
         </S.LinkButton>
 
       </S.Infos>

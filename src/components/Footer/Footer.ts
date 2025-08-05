@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { colors, fonts } from "../../styles/GlobalStyles";
+import bannerIMG from "../../assets/banner.png";
 
 export const Footer = styled.footer`
-  background-color: ${colors.color2};
+  background-image: url(${bannerIMG});
   padding: 2rem;
   margin-top: 2rem;
 `
@@ -16,11 +16,13 @@ export const FooterContent = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  padding-top: 40px;
 `
 
 export const RedeSociais = styled.div`
  display: flex;
  gap: 10px;
+ margin-bottom: 80px;
  a{
      color: var(--color-white);
      &:hover{
@@ -31,9 +33,7 @@ export const RedeSociais = styled.div`
 
 export const FooterInformation = styled.div`
     margin: 2rem auto;
-
-    p {
-        color: ${colors.white};
-        font-family: ${fonts.fontRubik};
+    p{
+      font-size: 10px;
     }
 `

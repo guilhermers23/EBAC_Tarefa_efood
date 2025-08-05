@@ -5,7 +5,7 @@ import { colors } from "../../styles/GlobalStyles";
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
-  background-color: ${colors.color3};
+  background-color: ${colors.white};
   position: relative;
   border-radius: 5px;
 
@@ -17,7 +17,8 @@ export const Card = styled.div`
 export const Tag = styled.span`
   padding: 8px 8px;
   border-radius: 5px;
-  background-color: ${colors.color3}B2;
+  background-color: ${colors.color2}B2;
+  color: ${colors.white};
 `
 
 export const Tags = styled.div`
@@ -36,7 +37,6 @@ export const Infos = styled.section`
   padding: 1rem;
   border-width: 0px 2px 2px 2px;
   border-style: solid;
-  border-color: ${colors.color5};
  `
 
 export const RestaurantInfo = styled.div`

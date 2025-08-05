@@ -5,7 +5,7 @@ export const CardFood = styled.div`
   display: flex;
   flex-direction: column;
   padding: 8px;
-  background-color: ${colors.white};
+  background-color: ${colors.color2};
   border-radius: 5px;
   gap: 10px;
   color: ${colors.color1};

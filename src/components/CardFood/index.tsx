@@ -12,7 +12,7 @@ const CardFood = () => {
           A clássica Marguerita: molho de tomate suculento, mussarela derretida, manjericão fresco e um toque de azeite. Sabor e simplicidade!
         </p>
       </S.FoodInfos>
-      <Button type="button">Adicionar ao carrinho</Button>
+      <Button colorbutton="white" type="button">Adicionar ao carrinho</Button>
     </S.CardFood>
   )
 };

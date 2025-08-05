@@ -1,18 +1,15 @@
 import styled, { createGlobalStyle } from "styled-components";
+type PropsButton = { colorbutton: 'red' | 'white' };
 
 export const colors =
 {
-  color1: "#670D0F",
-  color2: "#F01945",
-  color3: "#F36444",
-  color4: "#FFCE6F",
-  color5: "#FFE3C9",
+  color1: "#FFF8F2",
+  color2: "#E66767",
   white: "#FFFFFF"
 };
 
 export const fonts = {
-  fontPoppins: '"Poppins", sans-serif',
-  fontRubik: '"Rubik", sans-serif',
+  fontRoboto: '"Roboto", sans-serif',
 };
 
 export const Main = styled.main`
@@ -29,22 +26,22 @@ const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: ${fonts.fontPoppins};
+  font-family: ${fonts.fontRoboto};
 }
 
 body{
   background-color: ${colors.color1};
-  color: ${colors.white} ;
+  color: ${colors.color2};
 }
 `
 
-export const Button = styled.button`
+export const Button = styled.button<PropsButton>`
   display: block;
   padding: 6px 0;
   border-radius: 5px;
   border: none;
-  background-color: ${colors.color2};
-  color: ${colors.white};
+  background-color: ${(props) => props.colorbutton === "white" ? `${colors.white}` : `${colors.color2}`};
+  color: ${(props) => props.colorbutton === "white" ? `${colors.color2}` : `${colors.white}`};
   font-size: 14px;
   font-weight: bold;
   width: 100%;
