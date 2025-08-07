@@ -18,11 +18,13 @@ export const HeaderContainer = styled.div<PropsPage>`
 
    a{
     color: ${colors.color2};
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 900;
   }
 `
 export const Title = styled.h3<PropsPage>`
   font-size: 18px;
+  font-weight: 900;
   display: ${({ page }) => page === undefined ? "none" : "block"};
 `
 

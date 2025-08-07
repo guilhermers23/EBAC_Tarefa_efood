@@ -15,9 +15,10 @@ export const Card = styled.div`
   }
 `
 export const Tag = styled.span`
+  font-size: 12px;
+  font-weight: 700;
   padding: 8px 8px;
-  border-radius: 5px;
-  background-color: ${colors.color2}B2;
+  background-color: ${colors.color2};
   color: ${colors.white};
 `
 

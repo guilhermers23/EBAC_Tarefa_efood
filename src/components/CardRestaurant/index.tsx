@@ -21,7 +21,7 @@ const CardRestaurant = () => {
         </S.AboutRestaurant>
 
         <S.LinkButton to={`/restaurante/name`}>
-          <Button colorbutton="red" type="button">Acessar</Button>
+          <Button colorbutton="red" type="button">Saiba mais</Button>
         </S.LinkButton>
 
       </S.Infos>

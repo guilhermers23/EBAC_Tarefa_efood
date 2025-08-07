@@ -5,6 +5,7 @@ export const colors =
 {
   color1: "#FFF8F2",
   color2: "#E66767",
+  color3: "#FFEBD9",
   white: "#FFFFFF"
 };
 
@@ -37,14 +38,12 @@ body{
 
 export const Button = styled.button<PropsButton>`
   display: block;
-  padding: 6px 0;
-  border-radius: 5px;
+  padding: 6px;
   border: none;
-  background-color: ${(props) => props.colorbutton === "white" ? `${colors.white}` : `${colors.color2}`};
-  color: ${(props) => props.colorbutton === "white" ? `${colors.color2}` : `${colors.white}`};
+  background-color: ${(props) => props.colorbutton === "white" ? `${colors.color3}` : `${colors.color2}`};
+  color: ${(props) => props.colorbutton === "white" ? `${colors.color2}` : `${colors.color3}`};
   font-size: 14px;
-  font-weight: bold;
-  width: 100%;
+  font-weight: 700;
   transition: all ease-in .2s;
   cursor: pointer;
 `

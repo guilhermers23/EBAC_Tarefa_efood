@@ -8,7 +8,7 @@ export const CardFood = styled.div`
   background-color: ${colors.color2};
   border-radius: 5px;
   gap: 10px;
-  color: ${colors.color1};
+  color: ${colors.color3};
 
   img{
     width: 100%;
@@ -19,15 +19,15 @@ export const CardFood = styled.div`
 export const FoodInfos = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 8px;
 
   h3{
-    font-size: 1.2rem;
+    font-size: 18px;
     font-weight: 900;
   }
 
   p{
     font-size: 14px;
-    line-height: 25px;
+    line-height: 22px;
   }
 `
