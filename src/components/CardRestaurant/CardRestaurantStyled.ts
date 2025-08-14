@@ -12,6 +12,8 @@ export const Card = styled.div`
   img{
     max-width: 100%;
     border-radius: 5px 5px 0 0;
+    object-fit: cover;
+    height: 217px;
   }
 `
 export const Tag = styled.span`
