@@ -9,7 +9,7 @@ const AppRoutes = () => (
       <Route path="*" element={<div>Erro</div>} />
       <Route element={<Layout />}>
         <Route index element={<Home />} />
-        <Route path="/restaurante/:name" element={<Restaurant />} />
+        <Route path="/restaurante/:id/:name" element={<Restaurant />} />
       </Route>
     </Routes>
   </BrowserRouter>

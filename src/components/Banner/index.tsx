@@ -1,17 +1,19 @@
+import type { IRestaurant } from "../../interfaces/IRestaurant";
 import * as S from "./BannerStyled";
 
-export type PropsBanner = { typebanner: "Banner" | "Restaurante" };
+type PropsBanner = { typebanner: "Banner" | "Restaurante", restaurant?: IRestaurant };
 
-const Banner = ({ typebanner }: PropsBanner) => {
+const Banner = ({ typebanner, restaurant }: PropsBanner) => {
+  const background = restaurant?.capa;
   return (
-    <S.Banner typebanner={typebanner}>
-      <S.BannerContent typebanner={typebanner}>
+    <S.Banner typebanner={typebanner} restaurant={background as string}>
+      <S.BannerContent typebanner={typebanner} >
         {typebanner === "Banner" ?
           <h2>Viva experiências gastronômicas <br />
             no conforto da sua casa</h2> :
           <>
-            <S.FoodNation>Italiana</S.FoodNation>
-            <h2>La Dolce Vita Trattoria</h2>
+            <S.FoodNation>{restaurant?.tipo}</S.FoodNation>
+            <h2>{restaurant?.titulo}</h2>
           </>
         }
       </S.BannerContent>

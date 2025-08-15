@@ -5,3 +5,8 @@ export const getAllRestaurant = async () => {
   const response = axios.get(`${baseURL}`);
   return response;
 };
+
+export const getRestaurantByID = async (id: string) => {
+  const response = axios.get(`${baseURL}/${id}`);
+  return response;
+};
