@@ -38,4 +38,5 @@ export const LinkCart = styled.a<PropsPage>`
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  cursor: pointer;
 `

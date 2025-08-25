@@ -1,19 +1,27 @@
 import { useState } from "react";
-import { Button } from "../../styles/GlobalStyles";
+import { IoClose } from "react-icons/io5";
+import { Button, Overlay } from "../../styles/GlobalStyles";
 import type { MenuItem } from "../../interfaces/IRestaurant";
 import * as S from "./CardFood";
-import { IoClose } from "react-icons/io5";
+import { useDispatch } from "react-redux";
+import { AddItemCart, openCart } from "../../store/reducers/cart";
+import useAttributesFood from "../../hooks/useAttributesFood";
 
 type PropsRestaurant = { menu: MenuItem[] };
+
 const CardFood = ({ menu }: PropsRestaurant) => {
+  const dispatch = useDispatch();
+  const { formatPrice } = useAttributesFood();
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const [modalState, setModalState] = useState<MenuItem>();
 
-  const formatPrice = (price = 0) => {
-    return new Intl.NumberFormat("pt-BR", {
-      style: "currency",
-      currency: "BRL"
-    }).format(price)
+  const addToCart = () => {
+    if (modalState) {
+      dispatch(AddItemCart(modalState))
+      dispatch(openCart())
+    } else {
+      alert("Erro ao adiciobar item ao carrinho.")
+    }
   };
 
   const openModal = (item: MenuItem) => {
@@ -25,7 +33,6 @@ const CardFood = ({ menu }: PropsRestaurant) => {
     setModalState(undefined);
     setIsVisible(false);
   };
-
 
   return (
     <>
@@ -53,10 +60,12 @@ const CardFood = ({ menu }: PropsRestaurant) => {
               <p>{modalState?.descricao}</p>
               <p>Serve: {modalState?.porcao}</p>
             </S.ModalFoodInfos>
-            <Button colorbutton="white" type="button">Adiconar ao carrinho - {formatPrice(modalState?.preco)}</Button>
+            <Button colorbutton="white" type="button" onClick={addToCart}>
+              Adiconar ao carrinho - {formatPrice(modalState?.preco)}
+            </Button>
           </div>
         </S.ModalContent>
-        <S.Overlay onClick={() => closeModal()} />
+        <Overlay onClick={() => closeModal()} />
       </S.Modal>
     </>
   )
