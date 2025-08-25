@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Button, colors } from "../../styles/GlobalStyles";
+import { breakpoints, Button, colors } from "../../styles/GlobalStyles";
 
 type Props = { isopen: boolean };
 
@@ -20,6 +20,9 @@ export const Siderbar = styled.aside`
   padding: 32px 8px;
   max-width: 360px;
   width: 100%;
+   @media (max-width:${breakpoints.mobile}) {
+   width: 678px;
+  }
   ${Button}{
     max-width: 100%;
     width: 100%;
@@ -71,9 +74,14 @@ export const InfosItem = styled.div`
     font-weight: 400;
     }
 `
+
 export const TrashIcon = styled.span`
   position: absolute;
   right: 8px;
   bottom: 8px;
   cursor: pointer;
+ `
+export const ErroText = styled.h3`
+  align-items: center;
+  color: ${colors.color3};
  `

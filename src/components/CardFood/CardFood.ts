@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors, Overlay } from "../../styles/GlobalStyles";
+import { breakpoints, colors, Overlay } from "../../styles/GlobalStyles";
 
 type PropsVisible = { visible: boolean };
 
@@ -75,6 +75,11 @@ export const ModalContent = styled.div`
     position: absolute;
     display: block;
     cursor: pointer;
+  }
+
+   @media (max-width:${breakpoints.mobile}) {
+   flex-direction: column;
+   align-items: center;
   }
 `;
 

@@ -31,11 +31,15 @@ const Cart = () => {
             />
           )}
         </ul>
-        <S.Price>
-          <p>Valor Total</p>
-          <p>{formatPrice(getTotalPrice())}</p>
-        </S.Price>
-        <Button colorbutton="white" type="button">Continuar com a entrega</Button>
+        {foods.length === 0 ? <S.ErroText>Ops! Ainda não foi adicionado itens ao seu carinho.</S.ErroText> :
+          <>
+            <S.Price>
+              <p>Valor Total</p>
+              <p>{formatPrice(getTotalPrice())}</p>
+            </S.Price>
+            <Button colorbutton="white" type="button">Continuar com a entrega</Button>
+          </>
+        }
       </S.Siderbar>
     </S.CartContainer>
   )

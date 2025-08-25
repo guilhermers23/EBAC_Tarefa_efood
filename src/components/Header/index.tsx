@@ -9,7 +9,7 @@ const Header = () => {
   const dispatch = useDispatch();
   const { foods } = useSelector((state: RootReducer) => state.cart);
   const { name } = useParams();
-  const open = () => dispatch(openCart())
+  const open = () => dispatch(openCart());
 
   return (
     <S.HeaderBar>

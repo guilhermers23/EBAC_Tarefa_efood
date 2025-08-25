@@ -10,6 +10,12 @@ export const colors =
   white: "#FFFFFF"
 };
 
+export const breakpoints = {
+  desktop: "1024px",
+  tablet: "768px",
+  mobile: "468px"
+};
+
 export const fonts = {
   fontRoboto: '"Roboto", sans-serif',
 };
@@ -19,6 +25,10 @@ export const Main = styled.main`
   min-height: 80vh;
   margin: 0 auto;
   width: 100%;
+
+  @media (max-width: ${breakpoints.desktop}) {
+    max-width: 90%;
+  }
 `
 
 const GlobalStyles = createGlobalStyle`

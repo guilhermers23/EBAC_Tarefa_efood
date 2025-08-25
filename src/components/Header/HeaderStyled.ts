@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { colors } from "../../styles/GlobalStyles"
+import { breakpoints, colors } from "../../styles/GlobalStyles"
 import bannerImg from "../../assets/banner.png";
 
 type PropsPage = { page: string | undefined };
@@ -26,6 +26,9 @@ export const Title = styled.h3<PropsPage>`
   font-size: 18px;
   font-weight: 900;
   display: ${({ page }) => page === undefined ? "none" : "block"};
+  @media (max-width:${breakpoints.mobile}) {
+    display: none;
+  }
 `
 
 export const NavbarHeader = styled.div`
