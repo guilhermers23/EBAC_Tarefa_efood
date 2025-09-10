@@ -8,7 +8,7 @@ export const RestaurantList = styled.section`
   gap: 80px;
   margin-bottom: 120px;
   @media (max-width:${breakpoints.tablet}) {
-    max-width: 90%;
+    gap: 55px;
   }
   @media (max-width:${breakpoints.mobile}) {
     max-width: 100%;

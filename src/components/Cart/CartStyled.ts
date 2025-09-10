@@ -81,7 +81,17 @@ export const TrashIcon = styled.span`
   bottom: 8px;
   cursor: pointer;
  `
-export const ErroText = styled.h3`
-  align-items: center;
-  color: ${colors.color3};
- `
+
+export const EmptyCart = styled.div`
+  text-align: center;
+  font-size: 18px;
+  line-height: 24px;
+  color: ${colors.white};
+  p{
+    margin-bottom: 8px;
+  }
+
+  img{
+    width: 100%;
+  }
+`
