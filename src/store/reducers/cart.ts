@@ -1,5 +1,4 @@
 import { createSlice, type PayloadAction } from "@reduxjs/toolkit";
-import type { MenuItem } from "../../interfaces/IRestaurant";
 
 type StateCart = { foods: MenuItem[], isOpen: boolean };
 const initialState: StateCart = { foods: [], isOpen: false };

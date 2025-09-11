@@ -1,4 +1,3 @@
-import type { IRestaurant } from "../../interfaces/IRestaurant";
 import * as S from "./BannerStyled";
 
 type PropsBanner = { typebanner: "Banner" | "Restaurante", restaurant?: IRestaurant };

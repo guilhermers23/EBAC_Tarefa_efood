@@ -1,6 +1,5 @@
 import { createApi } from "@reduxjs/toolkit/query/react";
 import { fetchBaseQuery } from "@reduxjs/toolkit/query";
-import type { IRestaurant } from "../interfaces/IRestaurant";
 
 const API = createApi({
   baseQuery: fetchBaseQuery({

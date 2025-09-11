@@ -14,7 +14,7 @@ display: ${props => props.isopen === true ? "flex" : "none"};
   z-index: 1;
 `
 
-export const Siderbar = styled.aside`
+export const Sidebar = styled.aside`
   background-color: ${colors.color2};
   z-index: 1;
   padding: 32px 8px;

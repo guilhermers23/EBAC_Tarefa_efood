@@ -1,17 +1,15 @@
+import { useDispatch } from "react-redux";
 import { useState } from "react";
 import { IoClose } from "react-icons/io5";
-import { Button, Overlay } from "../../styles/GlobalStyles";
-import type { MenuItem } from "../../interfaces/IRestaurant";
-import * as S from "./CardFood";
-import { useDispatch } from "react-redux";
 import { AddItemCart, openCart } from "../../store/reducers/cart";
-import useAttributesFood from "../../hooks/useAttributesFood";
+import { formatPrice } from "../../utils";
+import { Button, Overlay } from "../../styles/GlobalStyles";
+import * as S from "./CardFood";
 
 type PropsRestaurant = { menu: MenuItem[] };
 
 const CardFood = ({ menu }: PropsRestaurant) => {
   const dispatch = useDispatch();
-  const { formatPrice } = useAttributesFood();
   const [isVisible, setIsVisible] = useState<boolean>(false);
   const [modalState, setModalState] = useState<MenuItem>();
 

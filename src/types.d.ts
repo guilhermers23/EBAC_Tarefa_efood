@@ -1,4 +1,4 @@
-export interface MenuItem {
+declare interface MenuItem {
   id: number;
   foto: string;
   preco: number;
@@ -7,7 +7,7 @@ export interface MenuItem {
   porcao: string;
 };
 
-export interface IRestaurant {
+declare interface IRestaurant {
   id: number;
   titulo: string;
   destacado: boolean;

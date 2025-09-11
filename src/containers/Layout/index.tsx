@@ -1,14 +1,14 @@
 import { Outlet } from "react-router";
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
-import Cart from "../../components/Cart";
+import ModalSidebar from "../../components/ModalSidebar";
 
 const Layout = () => (
   <>
     <Header />
     <Outlet />
     <Footer />
-    <Cart />
+    <ModalSidebar />
   </>
 );
 

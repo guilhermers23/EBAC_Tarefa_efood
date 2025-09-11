@@ -1,6 +1,5 @@
 import { FaStar } from "react-icons/fa";
 import { Button } from "../../styles/GlobalStyles";
-import type { IRestaurant } from "../../interfaces/IRestaurant";
 import * as S from "./CardRestaurantStyled";
 
 export type PropsRestaurant = { restaurant: IRestaurant }

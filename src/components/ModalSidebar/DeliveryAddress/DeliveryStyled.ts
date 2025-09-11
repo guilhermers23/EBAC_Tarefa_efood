@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../styles/GlobalStyles";
+import { colors } from "../../../styles/GlobalStyles";
 
 export const SectioForm = styled.div`
   display: flex;
