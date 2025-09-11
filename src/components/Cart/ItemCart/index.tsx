@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 import { FaRegTrashAlt } from "react-icons/fa";
 import { removeItemCart } from "../../../store/reducers/cart";
-import * as S from "../ModalSidebar";
+import * as S from "../CartStyled";
 
 type PropsItem = { title: string, price: string, cover: string, id: number };
 
