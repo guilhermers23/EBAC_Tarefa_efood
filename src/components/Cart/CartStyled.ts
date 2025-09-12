@@ -128,9 +128,15 @@ export const InputSpan = styled.span`
   input{
     height: 32px;
     padding: 8px;
-    border: 2px solid ${colors.color2};
+    border: none;
     background-color: ${colors.color3};
     width: 100%;
+  }
+
+  .error{
+   border: 3px solid ${colors.red};
+   background-color: ${colors.red}25;
+   border-radius: 5px;
   }
 `
 

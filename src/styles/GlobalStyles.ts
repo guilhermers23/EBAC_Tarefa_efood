@@ -7,7 +7,8 @@ export const colors =
   color2: "#E66767",
   color3: "#FFEBD9",
   black: "#000",
-  white: "#FFFFFF"
+  white: "#FFFFFF",
+  red: "#E62727"
 };
 
 export const breakpoints = {
