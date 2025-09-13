@@ -88,7 +88,7 @@ export const EmptyCart = styled.div`
   line-height: 24px;
   color: ${colors.white};
   p{
-    margin-bottom: 8px;
+    margin-bottom: 16px;
   }
 
   img{
