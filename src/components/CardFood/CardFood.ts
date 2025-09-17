@@ -1,17 +1,17 @@
 import styled from "styled-components";
 import { breakpoints, colors, Overlay } from "../../styles/GlobalStyles";
 
-type PropsVisible = { visible: boolean };
+type PropsVisible = { visible: string };
 
 export const CardFood = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 8px;
-  background-color: ${colors.color2};
+  background-color: ${colors.color5};
   border-radius: 5px;
   gap: 10px;
-  color: ${colors.color3};
+  color: ${colors.color1};
 
   img{
     height: 167px;
@@ -37,7 +37,7 @@ export const FoodInfos = styled.div`
 `
 
 export const Modal = styled.div<PropsVisible>`
-  display: ${(props) => props.visible === true ? "flex" : "none"};
+  display: ${(props) => props.visible === "true" ? "flex" : "none"};
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -60,8 +60,8 @@ export const ModalContent = styled.div`
   margin: 0 auto;
   gap: 24px;
   max-width: 960px;
-  background-color: ${colors.color2};
-  color: ${colors.color3};
+  background-color: ${colors.color5};
+  color: ${colors.color1};
 
   img{
     height: 280px;

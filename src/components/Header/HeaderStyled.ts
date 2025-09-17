@@ -1,12 +1,12 @@
 import styled from "styled-components"
 import { breakpoints, colors } from "../../styles/GlobalStyles"
-import bannerImg from "../../assets/banner.png";
 
 type PropsPage = { page: string | undefined };
 
 export const HeaderBar = styled.header`
-  background-image: url(${bannerImg});
+  background-color: ${colors.color2};
   padding: 24px;
+  color: ${colors.white};
 `
 export const HeaderContainer = styled.div<PropsPage>`
   display: flex;
@@ -36,10 +36,15 @@ export const NavbarHeader = styled.div`
   align-items: center;
 `
 
-export const LinkCart = styled.a<PropsPage>`
+export const LinkCart = styled.button<PropsPage>`
   display: ${({ page }) => page === undefined ? "none" : "flex"};
+  font-size: 16px;
+  font-weight: bold;
+  color: ${colors.white};
   align-items: center;
   justify-content: space-between;
   gap: 10px;
+  border: none;
+  background-color: transparent;
   cursor: pointer;
 `

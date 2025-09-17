@@ -36,10 +36,12 @@ export const Tags = styled.div`
 export const Infos = styled.section`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 20px;
   padding: 1rem;
   border-width: 0px 2px 2px 2px;
   border-style: solid;
+  height: 100%;
  `
 
 export const RestaurantInfo = styled.div`

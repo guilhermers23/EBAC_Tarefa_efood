@@ -1,10 +1,10 @@
 import styled from "styled-components";
 import { breakpoints, Button, colors } from "../../styles/GlobalStyles";
 
-type Props = { isopen: boolean };
+type Props = { isopen: string };
 
 export const CartContainer = styled.div<Props>`
-display: ${props => props.isopen === true ? "flex" : "none"};
+display: ${props => props.isopen === "true" ? "flex" : "none"};
   position: fixed;
   top: 0;
   left: 0;
@@ -34,7 +34,7 @@ export const Sidebar = styled.aside`
 export const Price = styled.span`
   display: flex;
   justify-content: space-between;
-  color: ${colors.color1};
+  color: ${colors.color5};
   margin: 40px 0 16px 0;
 
   p{
@@ -48,8 +48,8 @@ export const Item = styled.li`
   display: flex;
   gap: 8px;
   padding: 8px;
-  color: ${colors.color2};
-  background-color: ${colors.color3};
+  color: ${colors.color1};
+  background-color: ${colors.color5};
   margin-bottom: 16px;
 
  img {

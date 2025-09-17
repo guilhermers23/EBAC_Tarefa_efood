@@ -20,14 +20,14 @@ const Cart = () => {
   };
 
   return (
-    <S.CartContainer isopen={isOpen}>
+    <S.CartContainer isopen={isOpen.toString()}>
       <Overlay onClick={() => close()} />
       {isDelivery ? <Checkout /> :
         <S.Sidebar>
           {foods.length === 0 ?
             <S.EmptyCart>
               <p>Seu carrinho está vazio! 🤔</p>
-              <p>Que tal escolha alguma refeição! 😋</p>
+              <p>Que tal escolher alguma refeição! 😋</p>
               <img src="https://www.handmadecachoeiro.com.br/Content/projeto/img/cesta-vazia.png" alt="Carrinho Vazio" />
             </S.EmptyCart> :
             (

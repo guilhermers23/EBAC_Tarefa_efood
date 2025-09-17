@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import bannerIMG from "../../assets/banner.png";
+import { colors } from "../../styles/GlobalStyles";
 
 export const Footer = styled.footer`
-  background-image: url(${bannerIMG});
+  background-color: ${colors.color2};
   padding: 2rem;
   margin-top: 2rem;
+  color: ${colors.white};
 `
 
 export const FooterContent = styled.div`
@@ -24,7 +25,7 @@ export const RedeSociais = styled.div`
  gap: 10px;
  margin-bottom: 80px;
  a{
-     color: var(--color-white);
+     color: ${colors.white};
      &:hover{
         transform: scale(1.1);
      }

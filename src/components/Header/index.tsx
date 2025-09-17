@@ -1,5 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router";
+import { FaCartShopping } from "react-icons/fa6";
 import type { RootReducer } from "../../store";
 import { openCart } from "../../store/reducers/cart";
 import Logo from "../Logo";
@@ -10,6 +11,7 @@ const Header = () => {
   const { foods } = useSelector((state: RootReducer) => state.cart);
   const { name } = useParams();
   const open = () => dispatch(openCart());
+  const isS = foods.length > 1 ? "s" : '';
 
   return (
     <S.HeaderBar>
@@ -19,7 +21,7 @@ const Header = () => {
           <Logo />
         </S.NavbarHeader>
         <S.LinkCart onClick={open} page={name}>
-          {foods.length} produto(s) no carrinho
+          {foods.length} - produto{isS} no carrinho <FaCartShopping size={25} />
         </S.LinkCart>
       </S.HeaderContainer>
     </S.HeaderBar>

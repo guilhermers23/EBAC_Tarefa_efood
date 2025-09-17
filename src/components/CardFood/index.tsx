@@ -48,7 +48,7 @@ const CardFood = ({ menu }: PropsRestaurant) => {
         </S.CardFood>
       )}
 
-      <S.Modal visible={isVisible}>
+      <S.Modal visible={isVisible.toString()}>
         <S.ModalContent>
           <header><IoClose size={25} onClick={() => closeModal()} /></header>
           <img src={modalState?.foto} alt="" />

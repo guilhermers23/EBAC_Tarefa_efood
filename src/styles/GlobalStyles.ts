@@ -3,9 +3,11 @@ type PropsButton = { colorbutton: 'red' | 'white' };
 
 export const colors =
 {
-  color1: "#FFF8F2",
-  color2: "#E66767",
-  color3: "#FFEBD9",
+  color1: "#670D0F",
+  color2: "#F01945",
+  color3: "#F36444",
+  color4: "#FFCE6F",
+  color5: "#FFE3C9",
   black: "#000",
   white: "#FFFFFF",
   red: "#E62727"
@@ -19,6 +21,8 @@ export const breakpoints = {
 
 export const fonts = {
   fontRoboto: '"Roboto", sans-serif',
+  fontPoppins: '"Poppins", sans-serif',
+  fontRubik: '"Rubik", sans-serif',
 };
 
 export const Main = styled.main`
@@ -39,7 +43,7 @@ const GlobalStyles = createGlobalStyle`
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: ${fonts.fontRoboto};
+  font-family: ${fonts.fontPoppins};
 }
 
 body{
@@ -53,9 +57,10 @@ export const Button = styled.button<PropsButton>`
   padding: 6px;
   border: none;
   background-color: ${(props) => props.colorbutton === "white" ? `${colors.color3}` : `${colors.color2}`};
-  color: ${(props) => props.colorbutton === "white" ? `${colors.color2}` : `${colors.color3}`};
+  color: ${colors.white};
   font-size: 14px;
   font-weight: 700;
+  border-radius: 5px;
   transition: all ease-in .2s;
   cursor: pointer;
 `

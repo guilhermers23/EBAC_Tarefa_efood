@@ -10,7 +10,7 @@ export const Banner = styled.section<Props>`
   background-position: center;
   padding: 2rem;
   margin-bottom: 80px;
-  color: ${({ typebanner }) => typebanner === "Restaurante" ? `${colors.white}` : `${colors.color2}`};
+  color: ${colors.white};
 
   &::after{
       position: absolute;
