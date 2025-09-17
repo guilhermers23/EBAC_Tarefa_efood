@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router";
-import { FaCartShopping } from "react-icons/fa6";
+import { FaBasketShopping } from "react-icons/fa6";
 import type { RootReducer } from "../../store";
 import { openCart } from "../../store/reducers/cart";
 import Logo from "../Logo";
@@ -21,7 +21,11 @@ const Header = () => {
           <Logo />
         </S.NavbarHeader>
         <S.LinkCart onClick={open} page={name}>
-          {foods.length} - produto{isS} no carrinho <FaCartShopping size={25} />
+          <span>
+            {foods.length === 0 ? "Carrinho Vazio" : `${foods.length} - produto${isS} no carrinho`}
+          </span>
+          <p>{foods.length} </p>
+          <FaBasketShopping size={25} />
         </S.LinkCart>
       </S.HeaderContainer>
     </S.HeaderBar>

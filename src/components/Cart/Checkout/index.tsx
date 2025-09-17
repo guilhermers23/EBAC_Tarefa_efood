@@ -110,7 +110,11 @@ const Checkout = () => {
           {/* Secao de Pagamento */}
           <form onSubmit={formPayment.handleSubmit}>
             <S.SectioForm>
-              <h3>Pagamento - Valor a pagar {formatPrice(getTotalPrice(foods))}</h3>
+              <h3>Pagamento</h3>
+              <S.PaymentContent>
+                <span>Valor a pagar</span>
+                <span>{formatPrice(getTotalPrice(foods))}</span>
+              </S.PaymentContent>
 
               <S.InputSpan>
                 <label htmlFor="cardDiplayName">Nome no cartão</label>

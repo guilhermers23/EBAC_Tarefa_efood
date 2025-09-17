@@ -99,7 +99,7 @@ export const EmptyCart = styled.div`
 export const SectioForm = styled.div`
   display: flex;
   flex-direction: column;
-  color: ${colors.color3};
+  color: ${colors.color5};
   font-size: 14px;
   font-weight: bold;
   gap: 8px;
@@ -129,13 +129,13 @@ export const InputSpan = styled.span`
     height: 32px;
     padding: 8px;
     border: none;
-    background-color: ${colors.color3};
+    background-color: ${colors.color5};
     width: 100%;
   }
 
   .error{
-   border: 3px solid ${colors.red};
-   background-color: ${colors.red}25;
+   border: 3px solid ${colors.color4};
+   background-color: ${colors.color4};
    border-radius: 5px;
   }
 `
@@ -146,8 +146,15 @@ export const InputGrup = styled.div`
   gap: 34px;
 `
 
+export const PaymentContent = styled.div`
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  margin-bottom: 16px;
+`
+
 export const OrderContainer = styled.div`
-    color: ${colors.color3};
+    color: ${colors.color5};
 
     h3{
       font-size: 16px;
@@ -157,6 +164,7 @@ export const OrderContainer = styled.div`
 `
 
 export const Message = styled.div`
+  color: ${colors.color5};
   display: flex;
   flex-direction: column;
   gap: 24px;

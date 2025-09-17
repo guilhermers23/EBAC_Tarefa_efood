@@ -62,6 +62,7 @@ export const ModalContent = styled.div`
   max-width: 960px;
   background-color: ${colors.color5};
   color: ${colors.color1};
+  border-radius: 5px;
 
   img{
     height: 280px;
@@ -80,6 +81,11 @@ export const ModalContent = styled.div`
    @media (max-width:${breakpoints.mobile}) {
    flex-direction: column;
    align-items: center;
+   padding: 16px;
+  }
+
+   @media (max-width:${breakpoints.tablet}) {
+    width: 90%;
   }
 `;
 
