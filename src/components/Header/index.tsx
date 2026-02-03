@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router";
-import { FaBasketShopping } from "react-icons/fa6";
+import { MdOutlineShoppingBag, MdShoppingBag } from "react-icons/md";
 import type { RootReducer } from "../../store";
 import { openCart } from "../../store/reducers/cart";
 import Logo from "../Logo";
@@ -11,7 +11,8 @@ const Header = () => {
   const { foods } = useSelector((state: RootReducer) => state.cart);
   const { name } = useParams();
   const open = () => dispatch(openCart());
-  const isS = foods.length > 1 ? "s" : '';
+  const bag = foods.length > 0 ?
+    <MdShoppingBag size={25} /> : <MdOutlineShoppingBag size={25} />;
 
   return (
     <S.HeaderBar>
@@ -21,11 +22,9 @@ const Header = () => {
           <Logo />
         </S.NavbarHeader>
         <S.LinkCart onClick={open} page={name}>
-          <span>
-            {foods.length === 0 ? "Carrinho Vazio" : `${foods.length} - produto${isS} no carrinho`}
-          </span>
           <p>{foods.length} </p>
-          <FaBasketShopping size={25} />
+          {bag}
+          <span>Sacola</span>
         </S.LinkCart>
       </S.HeaderContainer>
     </S.HeaderBar>

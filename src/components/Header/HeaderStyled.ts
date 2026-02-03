@@ -47,17 +47,10 @@ export const LinkCart = styled.button<PropsPage>`
   border: none;
   background-color: transparent;
   cursor: pointer;
-p{
-  display: none;
-}
 
   @media (max-width: ${breakpoints.mobile}) {
     span{
       display: none;
-    }
-
-    p{
-      display: block;
     }
   }
 `
